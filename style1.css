@@ -1,0 +1,282 @@
+.theme {
+    background-color: #2C2F33;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: ghostwhite;
+    height: 100%;
+    overflow: auto;
+}
+
+.parallax {
+    /* The image used */
+    background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.842)), url("https://cdn.discordapp.com/attachments/640013491247382535/707674706391728209/nee.png");
+
+    /* Full height */
+    height: 25%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*
+   Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+    color: #3B5998;
+}
+
+#social-tw:hover {
+    color: #4099FF;
+}
+
+#social-gp:hover {
+    color: #d34836;
+}
+
+#social-em:hover {
+    color: #f39c12;
+}
+
+footer {
+
+    background-color: rgba(17, 19, 20, 0.781);
+    text-align: center;
+    color: white;
+    /* height: 160px; */
+    margin-top: 35px;
+    padding-top: 1rem;
+
+}
+
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Height of the footer */
+
+}
+
+.bubble {
+    border-radius: 5rem;
+    /* background-color: rgb(17, 17, 17); */
+    color: black;
+
+}
+
+.title {
+    font-size: 35pt;
+    font-weight: bolder;
+    color: #ffe1b4;
+
+}
+
+.containerMain {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.842)), url("https://cdn.discordapp.com/attachments/640013491247382535/707674702612660224/2two.png");
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.navbar-custom {
+    background-color: #e74d3c8c;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Taken from Batsu */
+
+/* Carousel images container */
+
+.carousel-item {
+    height: 50vh;
+    background-color: #2C2F33;
+}
+
+
+/* Image that will be inside of the carousel */
+
+.d-block {
+    /* max-width: 100%; */
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Gallery with Mansonry Layout  -- Source: https://www.youtube.com/watch?v=DEXKAUrl2q0 */
+
+.gallery-item {
+    max-width: 100%;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    display: block;
+}
+
+.masonry-layout {
+    --columns: 1;
+    --gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-gap: var(--gap);
+}
+
+.masonry-item {
+    margin-bottom: var(--gap);
+}
+
+/*Quantity of columns the gallery will have*/
+.masonry-layout.columns-2 {
+    --columns: 2;
+}
+
+.masonry-layout.columns-3 {
+    --columns: 3;
+}
+
+.masonry-layout.columns-4 {
+    --columns: 4;
+}
+
+.masonry-layout.columns-5 {
+    --columns: 5;
+}
+
+
+/* Responsive Gallery */
+
+@media (max-width: 780px) {
+    .masonry-layout {
+        --columns: 2;
+        --gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: var(--gap);
+    }
+}
+
+@media (max-width: 480px) {
+    .masonry-layout {
+        --columns: 1;
+        --gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(minmax(1, var(--columns)), 1fr);
+        grid-gap: var(--gap);
+    }
+}
+
+
+/*Commission details image*/
+.commission-details {
+    background-image: url(img/commissions/Details.png);
+    margin: 10px;
+}
+
+/*Styling the large bootstrap button for the contact us page*/
+.btn-lg {
+    margin: 20px;
+    height: 10vh;
+    width: 300px;
+    font-size: 25px;
+    background-color: darkgoldenrod;
+}
+
+/*Centering vertically*/
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+/*Text and headings for the gallery items*/
+.gallery-item-text {
+    text-align: center;
+    color: white;
+    background-color: #242526;
+    border-bottom-style: solid;
+    border-color: darkred;
+    font-size: 25px;
+}
+/*Overriding the styling of the P tag*/
+p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/*Classes to style images*/
+.content-img {
+    width: 500px;
+    padding: 50px;
+}
+
+.content-img-sm {
+    width: 25%;
+    padding: 50px;
+}
+
+
+/*Add on hover effect*/
+
+.onhoverDark {
+    /*      width: 33.333%;*/
+    height: auto;
+    float: left;
+    padding: 0;
+    position: relative;
+}
+
+.onhoverDark:hover img {
+    opacity: 0.3;
+}
+
+.onhoverDark:hover .work-text-content {
+    opacity: 1;
+}
+
+.onhoverDark img {
+    padding: 0;
+    width: 100%;
+    display: block;
+    opacity: 1;
+}
+
+.onhoverDark img,
+.work-text-content {
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+
+.work-text-content {
+    position: absolute;
+    color: white;
+    left: 0;
+    top: 25%;
+    right: 0;
+    bottom: 0;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+}
